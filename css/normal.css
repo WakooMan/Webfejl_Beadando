@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+#activate-normal 
+{
+    display: none;
+}
+
+/*Blokkok elkerülése*/
+.kipozicional a {position: absolute; left: -9999px;}
+.kipozicional a:focus {position: static; background-color: #ddd; color: black;}
+
+
+/*Header és Footer beállítások*/
+
+header,footer,aside,aside a
+{
+  font-family: 'Anton', sans-serif;
+  background-color: #333;
+  color: #f2f2f2;
+  overflow: hidden;
+  text-align: center;
+}
+
+footer > address > a > img
+{
+    border-radius: 10%;
+}
+
+header > nav > a
+{
+    color: #f2f2f2;
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+nav a:hover 
+{
+    background-color: #ddd;
+    color: black;
+}
+  
+  nav a.active
+  {
+    background-color: yellowgreen;
+    color: white;
+  }
+
+  nav a.image 
+  {
+    padding: 7px 10px 0px 10px;
+  }
+
+  nav a.image:hover
+  {
+    background-color: #333;
+  }
+  /*Header beállítások vége*/
+
+  /*Alapértelmezett beállítások*/
+  body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: whitesmoke;
+    text-align: left;
+  }
+
+  /*inline formázások*/
+  div.inline > p
+  {
+    width: 60%;
+  }
+
+  .inline > *
+  {
+    display: inline-block;
+  }
+
+  section.inline > *
+  {
+    width: 50%;
+  }
+
+  div.inline > div#baloldal
+  {
+    padding-right: 50px;
+  }
+
+  div#jobboldal > input.gomb
+  {
+    margin:40px 10px 10px 10px ;
+  }
+
+  /*Aside formázása*/
+  aside,aside a
+  {
+    text-align: left;
+
+  }
+
+  /*A kép és a cím formázása*/
+  div.container > h1
+  {
+    font-family: 'Anton', sans-serif;
+  }
+
+  div.container
+  {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  div.container > img {
+    filter: grayscale(100%);
+  }
+
+  .centered {
+    font-size: 64px;
+    color: yellowgreen;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*Form formázások*/
+  fieldset
+  {
+    width: 50%;
+  }
+
+  form
+  {
+    padding :10px;
+  }
+
+  
+
+/*edzesterv.html-hez a formázások*/
+  body.edzesterv
+{
+    background-image:url("../kepek/beosztás.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+section.edzesterv,article.edzesterv
+{
+    width: 80%;
+    padding:20px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin:20px;
+}

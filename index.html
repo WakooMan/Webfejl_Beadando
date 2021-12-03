@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normal.css">
+    <title>Calisthenics Tutorial</title>
 </head>
 <body>
+    <div class="row">
+        <nav class="kipozicional">
+            <a href="#tartalom">Ugrás a tartalomra</a>
+        </nav>
+        <header class="border">
+            <nav>
+                <a class = "image"href="kepek/big_Logo.jpg" target="_blank"><img src = "kepek/big_Logo.jpg" width="61px" height="42px" alt = "logo"></a>
+                <a class="active" href="index.html">Kezdőlap</a>
+                <a href="gyakorlatok.html">Gyakorlatok</a>
+                <a href="edzesterv.html">Heti Beosztás</a>
+                <a href="edzestipusok.html">Edzéstípusok</a>
+                <a href="" id="activate-high-contrast">Gyengénlátó Változat</a>
+                <a href="" id="activate-normal">Normál Változat</a>
+            </nav>
+        </header>
+    </div>
+   <div class="row">
+        <main id="tartalom" class="border col-md-12 col-lg-9">
+            <div class = "container">
+                <img src="kepek/headerimg.jpg" alt="headerimg" style="width:100%;">
+                <h1 class="centered" id="focim">Calisthenics Kezdőknek</h1>
+            </div>
+            <article>
+                <h1 id="bevezetes">Mi az a Calisthenics?</h1>
+                <div class="inline">
+                    <p>A Calisthenics a saját testsúllyal végzett edzések gyűjtőneve. Ez az edzésforma nem csak az izomzat erősítésére fókuszál, hanem a test mobilitására, illetve ügyességére is.  A haladóbb gyakorlatok nagyon sok munkával érhetőek el, azonban látványosak is tudnak lenni, mint például egy kézállásban fekvőtámasz vagy akár egy támaszmérleg. A sportág sok gyakorlatban hasonlít a tornára, azonban itt leginkább csak a húzódzkodó rudat szokták használni.</p>
+                    <figure>
+                        <a href="kepek/HSPU.jpg" target="_blank"><img src="kepek/HSPU.jpg" width="124px" height="70px" alt="kézenállásból fekvőtámasz"></a>
+                        <figcaption>handstand push up</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="kepek/tamaszmerleg.jpg" target="_blank"><img src="kepek/tamaszmerleg.jpg" width="170px" height="70px" alt="támaszmérleg"></a>
+                        <figcaption>támaszmérleg</figcaption>
+                    </figure>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <h1 id="sulyzovscali">Súlyzós edzés vs Calisthenics</h1>
+                <p>Felmerülhet a kérdés, hogy melyik sportág lehet a jobb. Én úgy gondolom, hogy ez személyfüggő és pont azért, mert mindenkinek más a célja az edzéssel. Egy dolgot biztosra mondhatok, hogy a súlyzós edzés izomépítés szempontjából hatásosabb és könnyebb, mint a saját testsúllyal való edzés, azonban költségesebb is. Személy szerint én azért választottam (kipróbáltam mindkettőt) a calisthenics-et a súlyzós edzés helyett, mert jobban élveztem a saját testsúllyal végzett gyakorlatokat, illetve nekem nem az volt a célom, hogy minél gyorsabban építsek izmot, hanem hogy egészséges legyek.</p>
+            </article>
+            <hr>
+            <article>
+                <h1 id="cel">A weblap célja</h1>
+                <p>A célom ezzel a weblappal, hogy bemutassam az alapgyakorlatokat, illetve edzésterv felosztásokat, hogy el tudjátok ti is készíteni az edzésterveteket.</p>
+            </article>
+            <hr>
+            <form method="post" action="magyar.viktor.2000@gmail.com">
+                <fieldset>
+                    <legend id="kerdesvelemeny">Kérdés/vélemény írása</legend>
+                    <div class="inline">
+                        <div id="baloldal">
+                            <label for="ecim"><strong>E-mail cím</strong></label><br>
+                            <input type="text" size="25" maxlength = "50" name="emailcim" id="ecim" required><br>
+                            <label for="kerdesvelemeny"><strong>Kérdés/Vélemény</strong></label><br>
+                            <textarea id="kerdesvelemeny" name="kerdvelemeny" rows="4" cols="40"></textarea>
+                        </div>
+                        <div id="jobboldal">
+                            <label><strong>Mit szeretne tenni?</strong></label><br>
+                            <input type="radio" name="tennivalo" value="kerdezni" id="kerdes" checked>
+                            <label for="kerdes">Kérdés</label><br>
+                            <input type="radio" name="tennivalo" value="velemenyezni" id="ertekeles">
+                            <label for="ertekeles">Értékelés</label><br>
+                            <input type="submit" value="Elküld" class="gomb">
+                            <input type="reset" value="Törlés" class="gomb">
+                        </div>
+                    </div>
     
+                </fieldset>
+            </form>
+        </main>
+        <aside class="border col-md-12 col-lg-3">
+            <h1>Tartalom</h1>
+            <ul>
+                <li><a href="#focim">Főcím</a></li>
+                <li><a href="#bevezetes">Mi az a Calisthenics?</a></li>
+                <li><a href="#sulyzovscali">Súlyzós edzés vs Calisthenics</a></li>
+                <li><a href="#cel">A weblap célja</a></li>
+                <li><a href="#kerdesvelemeny">Kérdés/vélemény írása</a></li>
+            </ul>
+        </aside>
+   </div>
+    <div class="row">
+        <footer class="border">
+            <address> 
+                    Készítette: Magyar Viktor <br>
+                    <a href="mailto:magyar.viktor.2000@gmail.com"><img src="kepek/email.jpg" alt="üzenetküldés"></a>
+            </address>
+        </footer>
+    </div>
+    <script src="css/css-switch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 </body>
 </html>
